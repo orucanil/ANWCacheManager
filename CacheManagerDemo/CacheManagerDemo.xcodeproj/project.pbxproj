@@ -13,6 +13,7 @@
 		D3D130171F25C91600AD87B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D130161F25C91600AD87B4 /* Assets.xcassets */; };
 		D3D1301A1F25C91600AD87B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D130181F25C91600AD87B4 /* LaunchScreen.storyboard */; };
 		D3D130231F25C9B300AD87B4 /* ANWCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D130221F25C9B300AD87B4 /* ANWCacheManager.swift */; };
+		D3D130541F25DD7000AD87B4 /* MD5String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D130531F25DD7000AD87B4 /* MD5String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		D3D130191F25C91600AD87B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3D1301B1F25C91600AD87B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3D130221F25C9B300AD87B4 /* ANWCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANWCacheManager.swift; sourceTree = "<group>"; };
+		D3D130531F25DD7000AD87B4 /* MD5String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5String.swift; sourceTree = "<group>"; };
+		D3D130551F25DE1500AD87B4 /* CacheManagerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CacheManagerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 				D3D130161F25C91600AD87B4 /* Assets.xcassets */,
 				D3D130181F25C91600AD87B4 /* LaunchScreen.storyboard */,
 				D3D1301B1F25C91600AD87B4 /* Info.plist */,
+				D3D130551F25DE1500AD87B4 /* CacheManagerDemo-Bridging-Header.h */,
 			);
 			path = CacheManagerDemo;
 			sourceTree = "<group>";
@@ -71,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				D3D130221F25C9B300AD87B4 /* ANWCacheManager.swift */,
+				D3D130531F25DD7000AD87B4 /* MD5String.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 				TargetAttributes = {
 					D3D1300B1F25C91600AD87B4 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,6 +156,7 @@
 				D3D130121F25C91600AD87B4 /* ViewController.swift in Sources */,
 				D3D130101F25C91600AD87B4 /* AppDelegate.swift in Sources */,
 				D3D130231F25C9B300AD87B4 /* ANWCacheManager.swift in Sources */,
+				D3D130541F25DD7000AD87B4 /* MD5String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,10 +281,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CacheManagerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AnilORUC.CacheManagerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CacheManagerDemo/CacheManagerDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -286,10 +296,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CacheManagerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AnilORUC.CacheManagerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CacheManagerDemo/CacheManagerDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -313,6 +325,7 @@
 				D3D130201F25C91600AD87B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

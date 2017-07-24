@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         // Save to file directory
         let data: String = "demo.key"
-        ANWCacheManager.instance.setObject(object: data, key: dataKey)
+        ANWCacheManager.instance.setObject(object: data as AnyObject, key: dataKey)
         
         // Save to file directory
         let imageName: String = "demo.image.name"
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         ANWCacheManager.instance.removeObject(key: imageKey)
         
         // Save to user defaults
-        ANWCacheManager.instance.writeToUserDefaults(object: data, key: dataKey)
+        ANWCacheManager.instance.writeToUserDefaults(object: data as AnyObject, key: dataKey)
     }
 
     override func didReceiveMemoryWarning() {
