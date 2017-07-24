@@ -6,7 +6,7 @@ Memory friendly caching in directory and simple use user defaults methods. Every
 Installation
 --------------
 
-To use the ANWCacheManager in an app, just drag the ANWCacheManager files in Classes folder (demo files and assets are not needed) into your project.
+To use the ANWCacheManager in an app, just drag the ANWCacheManager files in Classes folder (demo files and assets are not needed) into your project. Add "#import <CommonCrypto/CommonCrypto.h>" into Bridging-Header.
 
 
 Properties
